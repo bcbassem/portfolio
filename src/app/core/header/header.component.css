@@ -1,0 +1,38 @@
+.container-lignes {
+    transition: transform 0.4s ease-in-out;
+}
+
+.active .container-lignes {
+    transition: transform 0.4s 0.4s ease-in-out;
+    transform: translate(-50%, -50%) rotate(360deg);
+}
+
+.active .ligne:nth-child(1) {
+    top: 8px;
+    transform: rotate(45deg);
+    transition:
+        top 0.4s ease-in-out,
+        transform 0.4s 0.4s ease-in-out
+}
+
+.active .ligne:nth-child(2) {
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.active .ligne:nth-child(3) {
+    top: 8px;
+    transform: rotate(-45deg);
+    transition:
+        top 0.4s ease-in-out,
+        transform 0.4s 0.4s ease-in-out
+}
+
+
+.ligne:nth-child(1),
+.ligne:nth-child(3) {
+    transform: rotate(0deg);
+    transition:
+        transform 0.4s ease-in-out,
+        top 0.4s 0.4s ease-in-out
+}

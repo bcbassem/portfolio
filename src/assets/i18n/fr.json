@@ -1,0 +1,47 @@
+{
+    "header":{
+        "ul":{
+            "li1":"à propos",
+            "li2":"projets",
+            "li3":"parcours",
+            "li4":"contact"
+        }
+    },
+    "hello":"fffff",
+    "mode":{
+        "light":"Mode Claire",
+        "dark":"Mode Sombre"
+    },
+    "welcome":"Bienvenue sur mon portfolio !",
+    "presentation":"Salut, je suis",
+    "p":"Mon défi est de trouver des solutions aux difficultés et de transformer des idées en réalité en utilisant la technologie du web", "btn1":"télécharger mon cv",
+    "btn2":"Envoyer",
+    "resumeExp":{
+        "name":"Éxperiences",
+        "title1": "Développeur FullStack",
+        "title2": "Développeur FullStack",
+        "title3": "Développeur FrontEnd",
+        "desc1":"Conception et développement d'une application pour la numérisation des services offerts aux personnes handicapées.",
+        "desc2":"Développement d'un site dynamique en utilisant PHP.",
+        "desc3":"Développement d'un site statique en utilisant HTML5, CSS3 et JavaScript."
+    },
+    "resumeEdu":{
+        "name":"éducation",
+        "title1": "Licence appliquée",
+        "title2": "Technicien Supérieur",
+        "title3": "Baccalauréat",
+        "sub1":"Technologie De L'informatique",
+        "sub2":"Physiothérapie",
+        "sub3":"Sciences Expérimentales",
+        "desc1":"Institut Supérieur des Études Technologiques de Djerba.",
+        "desc2":"École Supérieur des Sciences et Techniques de la santé de Monastir.",
+        "desc3":"Lycée Technique Houmet Souk de Djerba."
+        
+
+    },
+    "contact":"Intéressé à travailler ensemble ? Parlons-en",
+    "local":"Localisation",
+    "pending":"Envoi en cours...",
+    "required":"Ce champs est obligatoire",
+    "contactInfo":"Coordonnées"
+}

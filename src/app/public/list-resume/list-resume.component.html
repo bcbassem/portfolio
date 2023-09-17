@@ -1,0 +1,24 @@
+<div class="container mx-auto px-8  pb-20 dark:bg-black " id="parcours" >
+    <div class="flex flex-wrap lg:flex-no-wrap">
+       
+        <div class="w-full lg:w-1/2">
+            <h2 class="capitalize font-bold text-3xl  mb-8 rs-heading">
+                {{"resumeExp.name"|translate}}
+              </h2>
+              <div  *ngFor="let res of listResume  ; let last = last">
+            <app-resume [resume]="res" [isLast]="last"></app-resume>
+        </div>
+        </div>
+
+        <div class="w-full lg:w-1/2">
+            <h2 class="pt-10 md:pt-0 capitalize font-bold text-3xl   mb-8 rs-heading">
+                {{"resumeEdu.name"|translate}}
+               
+              </h2>
+              <div  *ngFor="let res of listEtude ; let last = last">
+            <app-resume [resume]="res" [isLast]="last"></app-resume>
+          
+        </div>
+        </div>
+    </div>
+</div>

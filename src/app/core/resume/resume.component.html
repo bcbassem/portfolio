@@ -1,0 +1,14 @@
+<div class="timeline relative py-4 "  [ngClass]="{'timeline': showTimeline}">
+    <div class="timeline-yr">
+        <span>{{resume.annee}}</span>
+    </div>
+    <div class="ml-4">
+        <h3 class="mb-2">
+            <span class="timeline-content-title-primary text-marron-primary dark:text-white">{{resume.title}}</span>
+            <span class="timeline-content-title-secondary text-marron-secondary dark:text-white">{{resume.subtitle}}</span>
+        </h3>
+        <p class="timeline-content-text text-marron-content dark:text-white" [innerHTML]="resume.content">
+           
+        </p>
+    </div>
+</div>

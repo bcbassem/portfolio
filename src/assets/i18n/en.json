@@ -1,0 +1,47 @@
+{
+    "header":{
+        "ul":{
+            "li1":"about",
+            "li2":"projects",
+            "li3":"resume",
+            "li4":"contact"
+        }
+    },
+    "hello":"dddd",
+    "mode":{
+        "light":"Light Mode",
+        "dark":"Dark Mode"
+    },
+    "welcome":"welcome to my portfolio website!",
+    "presentation":"Hey folks, I'm",
+    "p":"My challenge is to find solutions to difficulties and to turn ideas into reality using web technology.",
+    "btn1":"download cv",
+    "btn2":"Send",
+    "resumeExp":{
+        "name":"Experiences",
+        "title1": "FullStack Developer",
+        "title2": "FullStack Developer",
+        "title3": "FrontEnd Developer",
+        "desc1":"Design and development of an application for digitizing services provided to disabled individuals.",
+        "desc2":"Development of a dynamic website using PHP.",
+        "desc3":"Development of a static website using HTML5, CSS3, and JavaScript."
+    },
+    "resumeEdu":{
+        "name":"Education",
+        "title1": "Bachelor's Degree",
+        "title2": "Higher Technician",
+        "title3": "High School Diploma",
+        "sub1":"Information Technology",
+        "sub2":"Physiotherapy",
+        "sub3":"Experimental Sciences",
+        "desc1":"Higher Institute of Technological Studies of Djerba.",
+        "desc2":"Higher School of Health Sciences and Techniques of Monastir",
+        "desc3":"Houmet Souk Technical High School, Djerba."
+
+    },
+    "contact":"Interested to work together? Let's talk",
+    "local":"Location",
+    "pending":"Sending ...",
+    "required":"This field is required",
+    "contactInfo":"Contact Information"
+}

@@ -1,0 +1,67 @@
+<header class="h-auto xl:h-screen  max-w-full dark:text-white dark:bg-black">
+    <nav class="container mx-auto px-4 py-2 pt-4 flex justify-between flex-wrap md:px-8 shadow-md">
+
+        <button class="w-9 h-9 m-2 border border-none cursor-pointer rounded  relative md:hidden" (click)="add($event)">
+            <div class=" container-lignes w-6 h-5 absolute top-1/2 left-1/2 transform translate-x-[-50%] translate-y-[-50%] pointer-events-none">
+                <div class=" ligne absolute rounded-lg w-6 h-0.5 dark:bg-white bg-black top-0"></div>
+                <div class=" ligne absolute rounded-lg w-6 h-0.5 dark:bg-white bg-black top-2"></div>
+                <div class=" ligne absolute rounded-lg w-6 h-0.5 dark:bg-white bg-black top-4"></div>
+            </div>
+        </button>
+
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+        <div class="hidden w-full text-center md:flex flex-grow w-auto" id="menu">
+            <div class="hidden md:flex lg:pl-4">
+                <a href="/" class="text-2xl py-2 md:flex">
+                    <span class="font-bold capitalize">bassem</span>
+                    <i class="fa fa-ravelry text-3xl mx-2" aria-hidden="true"></i>
+
+                </a>
+            </div>
+            <ul class="pt-5 md:pt-0 md:flex md:flex-grow md:justify-center dark:text-white " >
+                <li class="py-2 mx-4"><a href="#" class="capitalize" (click)="scrollToSection('a-propos')" >{{"header.ul.li1"| translate}}</a></li>
+               <!--  <li class="py-2 mx-4"><a href="#" class="capitalize" (click)="scrollToSection('projets')" >{{"header.ul.li2"| translate}}</a></li> -->
+                <li class="py-2 mx-4"><a href="#" class="capitalize " (click)="scrollToSection('parcours')" >{{"header.ul.li3"| translate}}</a></li>
+                <li class="py-2 mx-4"><a href="#" class="capitalize" (click)="scrollToSection('contact')" >{{"header.ul.li4"| translate}}</a></li>
+            </ul>
+            <div>
+                <div *ngIf="!isDarkMode" class="mt-2 lg:pr-4v cursor-pointer color-mode" 
+                (click)="handleMode()">
+                    <i class="fa fa-moon-o" aria-hidden="true"></i>
+                    <span> {{"mode.dark"| translate}}</span>
+                </div>
+            </div>
+            <div *ngIf="isDarkMode" class="mt-2 lg:pr-4v cursor-pointer color-mode  dark:text-white dark:bg-black"
+                (click)="handleMode()">
+                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                <span> {{"mode.light"| translate}}</span>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container mx-auto pb-20 px-4 py-4 flex flex-wrap justify-center md:px-8" id="a-propos">
+        <div class="sm:w-full lg:w-1/2 px-2 pt-32">
+            <span class="px-4 py-2 font-semibold text-sm capitalize dark:text-white dark:bg-black">{{"welcome"| translate}}</span>
+            <h1 class="text-4xl font-semibold my-4 dark:text-white">
+                {{"presentation"| translate}} <span class="element text-purple-600"></span>
+            </h1>
+            <p class="mb-4  tracking-wide text-lg">
+                {{"p"| translate}}
+            </p>
+            <div class="w-full">
+                <a href="../../../assets/cvBassem.pdf" download>
+                <button class="w-full mx-auto py-3 px-8 rounded-full font-semibold my-1 sm:w-auto bg-purple-300 ">
+                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                    {{"btn1"| translate}}
+                </button>
+            </a>
+             
+            </div>
+        </div>
+        <div class="mt-16 w-full lg:w-1/2 flex justify-center">
+            <img src="../assets/undraw_progressive_app_m-9-ms.svg" alt="image_header"
+                class="lg:w-4/5 rounded-3xl" />
+        </div>
+    </div>
+    
+</header>
